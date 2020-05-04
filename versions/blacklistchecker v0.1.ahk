@@ -26,7 +26,8 @@ if (current_version != new_version)
 	IfMsgBox, Yes
 	{
 		new_file_name = %A_ScriptName%%new_version%.ahk
-		UrlDownloadToFile, https://raw.githubusercontent.com/forest38asd/blacklistchecker/master/blacklistchecker`%20v%new_version%.ahk, %new_file_name%
+		UrlDownloadToFile, https://raw.githubusercontent.com/forest38asd/blacklistchecker/master/versions/blacklistchecker`%20v%new_version%.ahk, %new_file_name%
+		sleep 100
 		while not FileExist(new_file_name)
 		{
 			sleep 2000
