@@ -1,2 +1,0 @@
-﻿Версия 0.1:
-- Создан скрипт blacklistchecker for LVa 02 server
